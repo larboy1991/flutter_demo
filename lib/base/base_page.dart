@@ -43,6 +43,7 @@ abstract class BasePageView<T extends BaseViewModel> extends StatelessWidget {
         }));
   }
 
+  ///创建缺省状态，如果是EmptyState.normal 则使用默认传进来的布局
   Widget _cretaeEmptyState(BuildContext context, EmptyState state) {
     switch (state) {
       case EmptyState.normal:
